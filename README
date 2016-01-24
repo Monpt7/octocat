@@ -1,11 +1,21 @@
-Les bonus :
+INSTALLATION :
+L'installation est très simple. Rentrez la commande "make" et pour lancer le programme tapez "./octocat"
 
-- Ascii Art Octocat : lors de l'execution du programme, le texte "Octocat" apparait en rouge, clignotant et en Ascii. On utilise les séquences couleurs pour afficher le texte en couleur ou avec un effet. Les séquences s'écrivent de la façon suivante : \033[Xm où X représente la couleur (comprise entre 30 et 37) ou un effet (1, 4, 5 ou 7). Il ne faut pas oublier de fermer ces séquences avec \033[0m.
+MODES DE JEU
+- Mode Casual : Le mode de jeu de base, mouvement par mouvement avancez dans le labyrinthe.
 
-- Mode Blind : c'est un mode de jeu où l'utilisateur ne voit pas le labyrinthe. Comme dans les autres modes, l'Octocat se déplace avec les commandes a, s, d et w et dès que celui-ci se prend un mur, il perd la partie. L'utilisateur peut décider s'il veut rejouer ou non. S'il rejoue, il doit recommencer le labyrinthe depuis le début.
+- Mode Hardcore : Prevoyez en un coup TOUS vos deplacement. Vous n'avez pas le droit à l'erreur !
 
-- No return mode : C'est un mode de jeu où à chaque déplacement, la case où était l'Octocat se transforme en mur. Exemple : quand l'Octocat se déplace vers la droite, la case à sa gauche se transforme en mur. Bien évidemment, si l'Octocat se déplace vers la gauche, il se prend le mur et donc, il perd. Comme dans les autres modes, il est possible de rejouer.
+- Mode Blind : Parcourez le labyrithe à l'aveugle...
 
-- Choix de la map : après avoir choisi le mode de jeu, le programme demande qu'on choisisse une map. Si l'utilisateur ne tape rien, une map qui n'existe pas ou qui ne peut être ouverte, la map map1.txt est prise par défaut. Si l'utilisateur choisit une map qui existe, celle-ci est donc lue et utilisée.
+- No return mode : Soyez sur de vos decisions, vous ne pourrez pas retourner sur vos pas...
 
-Attention : si vous voulez creer une map, elle ne doit pas depasser plus de 1000 caracteres.
+DIVERS
+Vous pouvez choisir une map pour diversifier le jeu.
+Pourquoi ne pas creer les votre selon ces règles ?
+- Les murs sont matérialisés par tous les caractères sauf les espaces et des underscores (_).
+- Le chemin doit être matérialisé par des espaces.
+- La sortie doit être matérialisée par un underscore (_). Bien sur vous pouvez implémenter plusieurs sorties.
+- Chaque ligne de la carte doit avoir le même nombre de caractères.
+
+Attention : si vous voulez créer une map, elle ne doit pas depasser plus de 1000 caractères.
